@@ -16,11 +16,11 @@ public class ReplaceHandler implements ReplaceHandlerInterface {
     }
 
     @Override
-    public List<String> getList() {
+    public List<String> getList(int start, int end) {
 
         List<String> result = new ArrayList<>();
 
-        for (int number : this.generator.getList(1, 100)) {
+        for (int number : this.generator.getList(start, end)) {
             String newValue = String.valueOf(number);
 
             for (ReplacerPluginInterface replacer : this.replacer) {

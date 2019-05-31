@@ -7,7 +7,7 @@ public class Main {
     private static FizzBuzzFacadeInterface fizzBuzzFacade = null;
 
     public static void main(String[] args) {
-        getFacade().runFizzBuzz().forEach(System.out::println);
+        getFacade().runFizzBuzz(1, 100).forEach(System.out::println);
     }
 
     private static FizzBuzzFacadeInterface getFacade() {

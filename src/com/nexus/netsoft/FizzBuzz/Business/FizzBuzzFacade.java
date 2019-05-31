@@ -7,8 +7,8 @@ public class FizzBuzzFacade implements FizzBuzzFacadeInterface {
     private FizzBuzzBusinessFactoryInterface factory = null;
 
     @Override
-    public List<String> runFizzBuzz() {
-        return this.getFactory().createReplacer().getList();
+    public List<String> runFizzBuzz(int start, int end) {
+        return this.getFactory().createReplacer().getList(start, end);
     }
 
     private FizzBuzzBusinessFactoryInterface getFactory() {
