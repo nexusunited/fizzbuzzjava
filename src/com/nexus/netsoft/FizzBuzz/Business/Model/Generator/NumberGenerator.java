@@ -8,7 +8,7 @@ public class NumberGenerator implements GeneratorInterface {
     public List<Integer> getList(int start, int end) {
         List<Integer> list = new ArrayList<>();
 
-        for (int i = start; i < end; i++) {
+        for (int i = start; i <= end; i++) {
             list.add(i);
         }
 
