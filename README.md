@@ -1,4 +1,4 @@
-# FizzBuzz (Solid)
+# FizzBuzz (SOLID)
 
 ## Task
 
